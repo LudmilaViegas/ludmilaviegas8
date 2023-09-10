@@ -847,6 +847,7 @@ section {
 }
 
 .hero .sign-up-form {
+  visibility:hidden !important;
   margin-top: 20px;
   padding: 10px;
   border-radius: 7px;
