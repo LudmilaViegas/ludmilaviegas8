@@ -890,6 +890,10 @@ section {
 
 /* Clients Section - Home Page
 ------------------------------*/
+#clients {
+  display: none;
+}
+
 .clients {
   padding: 10px 0;
 }
@@ -1384,11 +1388,10 @@ section {
   text-align: center;
 }
 
-.pricing .icon {
-  margin: 30px auto 20px auto;
-  width: 70px;
-  height: 70px;
-  background: var(--primary-color);
+.pricing .icon img {
+  width: 70px; /* Ancho deseado para la imagen */
+  height: 70px; /* Alto deseado para la imagen */
+  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1397,33 +1400,40 @@ section {
   transform-style: preserve-3d;
 }
 
-.pricing .icon i {
-  color: var(--background-color);
-  font-size: 28px;
-  transition: ease-in-out 0.3s;
-  line-height: 0;
+.pricing .icon img {
+  width: 70px; /* Ancho deseado para la imagen */
+  height: 70px; /* Alto deseado para la imagen */
+  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
 }
 
-.pricing .icon::before {
-  position: absolute;
-  content: "";
-  height: 86px;
-  width: 86px;
+.pricing .icon img {
+  width: 70px; /* Ancho deseado para la imagen */
+  height: 70px; /* Alto deseado para la imagen */
+  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
   border-radius: 50%;
-  background: rgba(var(--primary-color-rgb), 0.2);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-1px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
 }
 
-.pricing .icon::after {
-  position: absolute;
-  content: "";
-  height: 102px;
-  width: 102px;
+.pricing .icon img {
+  width: 70px; /* Ancho deseado para la imagen */
+  height: 70px; /* Alto deseado para la imagen */
+  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
   border-radius: 50%;
-  background: rgba(var(--primary-color-rgb), 0.1);
-  transition: all 0.3s ease-out 0s;
-  transform: translateZ(-2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform-style: preserve-3d;
 }
 
 .pricing h4 {
