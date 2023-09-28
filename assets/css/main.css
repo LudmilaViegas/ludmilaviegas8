@@ -17,21 +17,23 @@
   --nav-font: "Lato", sans-serif;
   --adobe-font: "capitolina", serif; 
   --Angie: "ff-angie-pro", serif;
-  --Monsal: "monsal-gothic", sans-serif;
+  --Monsal: "monsal-gothic", sans-serif
 }
 
 /* Global Colors */
 :root {
-  --background-color: #ffffff;
+  --background-color: #F2EAE7;
   --background-color-rgb: 255, 255, 255;
   --default-color: #F2EAE7;
   --default-color-rgb: 33, 37, 41;
-  --primary-color: #F2EAE7;/*este ya ambie*/
-  --primary-color-rgb: 242, 234, 231;
-  --secondary-color: #F2EAE7;
-  --secondary-color-rgb: 50, 53, 58;
-  --contrast-color: #D8774C;
-  --contrast-color-rgb: 255, 255, 255;
+  --crema: #F2EAE7;/*titulos blancos*/
+  --crema-rgb: 242, 234, 231;
+  --naranja-oscuro: #E57A45;
+  --naranja-oscuro_rgb: 196, 112, 71;
+  --naranja: #F8B793;
+  --naranja-rgb: 248, 183, 147;
+  --topo: #3a3938;
+  --topo-rgb: rgb(58, 57, 56);
 }
 
 /* Nav Menu Colors */
@@ -59,13 +61,13 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--crema);
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
-  color: rgba(var(--primary-color-rgb), 0.7);
+  color: rgba(var(--crema), 0.7);
   text-decoration: none;
 }
 
@@ -75,7 +77,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--secondary-color);
+  color: var(--crema);
   font-family: var(--Angie);
 }
 
@@ -91,7 +93,7 @@ section {
 --------------------------------------------------------------*/
 .section-title {
   text-align: center;
-  padding-bottom: 60px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
@@ -105,7 +107,7 @@ section {
   content: "";
   width: 50px;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--crema);
   display: inline-block;
 }
 
@@ -137,7 +139,7 @@ section {
 .page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: var(--crema);
 }
 
 .page-title nav {
@@ -186,11 +188,11 @@ section {
   font-size: 24px;
   margin: 0;
   font-weight: 600;
-  color: var(--secondary-color);
+  color: var(--crema);
 }
 
 .header .logo span {
-  color: var(--primary-color);
+  color: var(--crema);
   font-size: 24px;
   font-weight: 600;
   padding-left: 3px;
@@ -198,8 +200,8 @@ section {
 
 .header .btn-getstarted,
 .header .btn-getstarted:focus {
-  color: var(--contrast-color);
-  background: var(--primary-color);
+  color: var(--naranja-oscuro);
+  background: var(--crema);
   font-size: 14px;
   padding: 8px 26px;
   margin: 0;
@@ -209,8 +211,8 @@ section {
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--contrast-color);
-  background: rgba(var(--primary-color-rgb), 0.85);
+  color: var(--naranja-oscuro);
+  background: rgba(var(--crema-rgb), 0.85);
 }
 
 @media (max-width: 1200px) {
@@ -483,13 +485,13 @@ section {
     justify-content: center;
     border-radius: 50%;
     transition: 0.3s;
-    background-color: rgba(var(--primary-color-rgb), 0.1);
+    background-color: rgba(var(--crema-rgb), 0.1);
   }
 
   .navmenu a i:hover,
   .navmenu a:focus i:hover {
-    background-color: var(--primary-color);
-    color: var(--contrast-color);
+    background-color: var(--crema);
+    color: var(--naranja-oscuro);
   }
 
   .navmenu a:hover,
@@ -500,8 +502,8 @@ section {
 
   .navmenu .active i,
   .navmenu .active:focus i {
-    background-color: var(--primary-color);
-    color: var(--contrast-color);
+    background-color: var(--crema);
+    color: var(--naranja-oscuro);
     transform: rotate(180deg);
   }
 
@@ -564,7 +566,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--primary-color);
+  background-color: var(--crema);
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -578,7 +580,7 @@ section {
 }
 
 .scroll-top:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.8);
+  background-color: rgba(var(--crema-rgb), 0.8);
   color: #ffffff;
 }
 
@@ -607,7 +609,7 @@ section {
 #preloader div {
   width: 13px;
   height: 13px;
-  background-color: var(--primary-color);
+  background-color: var(--crema);
   border-radius: 50%;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
   position: absolute;
@@ -677,7 +679,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  --background-color: #f4f4f4;
+  --background-color:var(--naranja);
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
@@ -699,7 +701,7 @@ section {
 }
 
 .footer .footer-about .logo span {
-  color: var(--secondary-color);
+  color: var(--crema);
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -726,12 +728,12 @@ section {
 }
 
 .footer .social-links a:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
+  color: var(--crema);
+  border-color: var(--crema);
 }
 
 .footer h4 {
-  color: var(--secondary-color);
+  color: var(--crema);
   font-size: 16px;
   font-weight: bold;
   position: relative;
@@ -771,7 +773,7 @@ section {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .footer .footer-contact p {
@@ -811,7 +813,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-
+/* Estilo de fondo para pantallas grandes (mayores de 678px) */
 .hero img {
   position: absolute;
   inset: 0;
@@ -821,6 +823,13 @@ section {
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
+  background: none; /* Elimina el fondo original */
+}
+/* Estilo de fondo para pantallas más pequeñas (678px o menos) */
+@media (min-width: 678px) {
+  .hero {
+    background: url('assets\img\hero-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .hero:before {
@@ -931,7 +940,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   line-height: 19px;
   padding: 10px 20px;
   background: F7B490, 0.05);
-  color: var(--primary-color);
+  color: var(--crema);
   border-radius: 7px;
   display: inline-block;
 }
@@ -967,7 +976,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .about .content .read-more:hover {
-  background: rgba(var(--primary-color-rgb), 0.8);
+  background: rgba(var(--crema), 0.8);
   padding-right: 19px;
 }
 
@@ -1009,8 +1018,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .about .icon-box:hover i {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
 }
 
 .about .icon-boxes .col-md-6:nth-child(2) .icon-box,
@@ -1116,7 +1125,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   left: 0;
   width: 30px;
   height: 2px;
-  background: var(--primary-color);
+  background: var(--crema);
   border-right: 5px solid var(--background-color);
 }
 
@@ -1141,7 +1150,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   content: "";
   height: 30px;
   width: 30px;
-  background: rgba(var(--primary-color-rgb), 0.3);
+  background: rgba(var(--crema-rgb), 0.3);
   border-radius: 50px;
   z-index: 1;
   bottom: -15px;
@@ -1156,11 +1165,11 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .services .service-item .title a {
-  color: var(--secondary-color);
+  color: var(--crema);
 }
 
 .services .service-item .title a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .services .service-item .description {
@@ -1173,14 +1182,14 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Estilo de fondo de color para la sección de precios */
 .features {
-  background-color: #F7B490; /* Cambia este color al que desees */
+  background-color:var(--naranja); /* Cambia este color al que desees */
   padding: 100px 0px 100px 0px;
   /* Otros estilos aquí si es necesario */
 }
 
 .features .features-item {
-  background-color: #F7B490;/*cambiar este color*/
-  color: var(--contrast-color);
+  background-color:var(--naranja);/*cambiar este color*/
+  color: var(--naranja-oscuro);
   padding: 8px 30px 10px 30px;
   border-radius: 0px;
 }
@@ -1198,17 +1207,18 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .features .features-item h3 {
   font-weight: 700;
   font-size: 26px;
+  text-align: left; /* Alinea el título a la izquierda */
 }
 
 .features .features-item .btn-get-started {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
   padding: 8px 30px 10px 30px;
   border-radius: 4px;
 }
 
 .features .features-item .btn-get-started:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.9);
+  background-color: rgba(var(--crema-rgb), 0.9);
 }
 
 .features .features-item ul {
@@ -1229,22 +1239,18 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .features .features-item ul i {
   font-size: 20px;
   padding-right: 4px;
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
-.features .features-item img {
-  border: 6px solid var(--background-color);
-  box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-}
 
 .features .features-item .features-img-bg {
   position: relative;
-  min-height: 10000px;
+  min-height: 500px;
 }
 
 @media (max-width: 640px) {
   .features .features-item .features-img-bg {
-    min-height: 1400px;
+    min-height: 300px;
   }
 }
 
@@ -1254,29 +1260,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
   object-fit: cover;
-}
-
-.features .features-item .image-stack {
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.features .features-item .image-stack .stack-back {
-  grid-column: 4/-1;
-  grid-row: 1;
-  width: 100%;
-  z-index: 1;
-}
-
-.features .features-item .image-stack .stack-front {
-  grid-row: 1;
-  grid-column: 1/span 8;
-  margin-top: 20%;
-  width: 100%;
-  z-index: 2;
+  object-fit: cover;
 }
 
 /* Portfolio Section - Home Page
@@ -1308,8 +1293,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
-  color: var(--contrast-color);
-  background-color: var(--primary-color);
+  color: var(--naranja-oscuro);
+  background-color: var(--crema);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1370,7 +1355,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1393,11 +1378,11 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .pricing {
-  padding: 50px 0 120px 0;
+  padding: 50px 0 50px 0;
 }
 
 .pricing .section-title {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 .pricing .pricing-item {
@@ -1415,38 +1400,24 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   text-align: center;
 }
 
+
+.pricing .image-container {
+  text-align: center; /* Centrar horizontalmente */
+}
+
+.pricing .image-container img {
+  max-width: 100%; /* La imagen se ajustará al ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  display: block; /* Asegura que la imagen se comporte como bloque */
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+
 .pricing .img {
-  width: 70px; /* Ancho deseado para la imagen */
+  width: 5000px; /* Ancho deseado para la imagen */
   height: 70px; /* Alto deseado para la imagen */
   margin: 0 auto; /* Centrar horizontalmente */
   display: block; /* Asegurar que la imagen se comporte como bloque */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  transform-style: preserve-3d;
-}
-
-.pricing .img {
-  width: 500px; /* Ancho deseado para la imagen */
-  height: 500px; /* Alto deseado para la imagen */
-  margin: 0 auto; /* Centrar horizontalmente */
-  display: block; /* Asegurar que la imagen se comporte como bloque */
-  border-radius: 50%;
-  display: flex;
-  align-items: space-around;
-  justify-content: space-around;
-  transition: 0.3s;
-  transform-style: preserve-3d;
-}
-
-.pricing .img {
-  width: fit-content; /* Ancho deseado para la imagen */
-  height: fit-content px; /* Alto deseado para la imagen */
-  margin: 0 auto; /* Centrar horizontalmente */
-  display: block; /* Asegurar que la imagen se comporte como bloque */
-  display: flex;
+  display: box;
   align-items: center;
   justify-content: center;
   transition: 0.3s;
@@ -1455,7 +1426,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .pricing h4 {
   font-size: 48px;
-  color: var(--primary-color);
+  color: var(--crema);
   font-weight: 700;
   font-family: var(--heading-font);
   margin-bottom: 25px;
@@ -1476,7 +1447,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   padding: 20px 0;
   list-style: none;
   color: rgba(var(--default-color-rgb), 0.8);
-  text-align: left;
+  text-align: center;
   line-height: 20px;
 }
 
@@ -1506,7 +1477,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .pricing .buy-btn {
   color: rgba(var(--default-color-rgb), 0.8);
-  background-color: var(--contrast-color);
+  background-color: var(--naranja-oscuro);
   display: inline-block;
   padding: 10px 40px;
   border-radius: 4px;
@@ -1519,22 +1490,22 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .pricing .buy-btn:hover {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
 }
 
 .pricing .featured {
   z-index: 10;
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--crema);
 }
 
 .pricing .featured .buy-btn {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
 }
 
 .pricing .featured .buy-btn:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.9);
+  background-color: rgba(var(--crema-rgb), 0.9);
 }
 
 @media (min-width: 992px) {
@@ -1545,15 +1516,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Faq Section - Home Page - parte preguntas
 ------------------------------*/
-
-/* Reemplaza 'ruta-de-la-imagen.png' con la ruta real de tu imagen */
-.faq-section {
-  background-image: url('ruta-de-la-imagen.png');
-  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
-  background-position: center center; /* Centra la imagen en el fondo */
-  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
-  padding: 100px 0; /* Ajusta el espacio alrededor del contenido de la sección */
-  color: white; /* Ajusta el color del texto según sea necesario para que sea legible en el fondo */
+.faq {
+  background-color: var(--naranja);
 }
 
 .faq .content h3 {
@@ -1563,7 +1527,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .faq .content p {
   font-size: 15px;
-  color: rgba(var(--default-color-rgb), 0.7);
+  color: var(--topo);
 }
 
 .faq .faq-container .faq-item {
@@ -1590,12 +1554,12 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .faq .faq-container .faq-item h3 .num {
-  color: var(--primary-color);
+  color: var(--crema);
   padding-right: 5px;
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .faq .faq-container .faq-item .faq-content {
@@ -1622,11 +1586,11 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .faq .faq-container .faq-active h3 {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1638,13 +1602,13 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .faq .faq-container .faq-active .faq-toggle {
   transform: rotate(90deg);
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 /* Team Section - Home Page
 ------------------------------*/
 .team {
-  --background-color: #f4f4f4;
+  --background-color: var(--naranja);
 }
 
 .team .member {
@@ -1687,13 +1651,13 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .team .member .member-img .social a {
   transition: 0.3s;
-  color: var(--contrast-color);
+  color: var(--naranja-oscuro);
   font-size: 20px;
   margin: 0 8px;
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .team .member .member-info {
@@ -1727,6 +1691,10 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Call-to-action Section - Home Page
 ------------------------------*/
+.call-to-action  {
+  display: none;
+}
+
 .call-to-action {
   --default-color: #ffffff;
   --background-color: #000000;
@@ -1782,29 +1750,30 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   border-radius: 5px;
   transition: 0.5s;
   margin: 10px;
-  border: 2px solid var(--contrast-color);
-  color: var(--contrast-color);
+  border: 2px solid var(--naranja-oscuro);
+  color: var(--naranja-oscuro);
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  background: var(--crema);
+  border: 2px solid var(--crema);
 }
 
 /* Testimonials Section - Home Page
 ------------------------------*/
 .testimonials {
-  --background-color: #f4f4f4;
+  --background-color: var(--naranja);
 }
 
 .testimonials .info h3 {
   font-weight: 700;
   font-size: 32px;
+  text-align: left;
 }
 
 .testimonials .swiper {
   box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
-  background-color: #fff;
+  background-color: var(--naranja);
 }
 
 .testimonials .testimonials-carousel,
@@ -1830,7 +1799,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 0;
+  margin-right: 0;
 }
 
 .testimonials .testimonial-item h4 {
@@ -1850,7 +1819,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: rgba(var(--primary-color-rgb), 0.4);
+  color: rgba(var(--crema-rgb), 0.4);
   font-size: 26px;
   line-height: 0;
 }
@@ -1893,7 +1862,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--primary-color);
+  background-color: var(--crema-rgb);
 }
 
 @media (max-width: 767px) {
@@ -1910,12 +1879,15 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Recent-posts Section - Home Page
 ------------------------------*/
+.recent-posts {
+  --background-color: var(--naranja);
+}
+
 .recent-posts article {
-  box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05);
   padding: 30px;
   height: 100%;
   border-radius: 10px;
-  overflow: hidden;
 }
 
 .recent-posts .post-img {
@@ -1926,7 +1898,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .recent-posts .post-category {
   font-size: 16px;
-  color: rgba(var(--default-color-rgb), 0.5);
+  color: rgba(var(--topo), 0.5);
   margin-bottom: 10px;
 }
 
@@ -1938,12 +1910,12 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .recent-posts .title a {
-  color: var(--secondary-color);
+  color: var(--crema);
   transition: 0.3s;
 }
 
 .recent-posts .title a:hover {
-  color: var(--primary-color);
+  color: var(--topo);
 }
 
 .recent-posts .post-author-img {
@@ -1965,6 +1937,10 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Contact Section - Home Page
 ------------------------------*/
+.contact {
+  display: none;
+}
+
 .contact .info-item {
   background: rgba(var(--default-color-rgb), 0.03);
   padding: 30px;
@@ -1973,7 +1949,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .contact .info-item h3 {
@@ -2030,7 +2006,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--crema);
   border-top-color: var(--background-color);
   animation: animate-loading 1s linear infinite;
 }
@@ -2050,7 +2026,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .contact .php-email-form input[type=text]:focus,
 .contact .php-email-form input[type=email]:focus,
 .contact .php-email-form textarea:focus {
-  border-color: var(--primary-color);
+  border-color: var(--crema);
 }
 
 .contact .php-email-form input[type=text]::-moz-placeholder,
@@ -2066,8 +2042,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .contact .php-email-form button[type=submit] {
-  background: var(--primary-color);
-  color: var(--contrast-color);
+  background: var(--crema);
+  color: var(--naranja-oscuro);
   border: 0;
   padding: 10px 30px;
   transition: 0.4s;
@@ -2075,7 +2051,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(var(--primary-color-rgb), 0.8);
+  background: rgba(var(--crema-rgb), 0.8);
 }
 
 @keyframes animate-loading {
@@ -2148,7 +2124,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--primary-color);
+  background: var(--crema);
   left: 0;
   bottom: 0;
 }
@@ -2174,14 +2150,14 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .portfolio-details .portfolio-info .btn-visit {
   padding: 8px 40px;
-  background: var(--primary-color);
-  color: var(--contrast-color);
+  background: var(--crema);
+  color: var(--naranja-oscuro);
   border-radius: 50px;
   transition: 0.3s;
 }
 
 .portfolio-details .portfolio-info .btn-visit:hover {
-  background: rgba(var(--primary-color-rgb), 0.8);
+  background: rgba(var(--crema-rgb), 0.8);
 }
 
 .portfolio-details .portfolio-description h2 {
@@ -2224,7 +2200,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
 .portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
-  color: rgba(var(--primary-color-rgb), 0.5);
+  color: rgba(var(--crema-rgb), 0.5);
   font-size: 26px;
   line-height: 0;
 }
@@ -2288,21 +2264,21 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .service-details .services-list a i {
   font-size: 16px;
   margin-right: 8px;
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .service-details .services-list a.active {
-  color: var(--contrast-color);
-  background-color: var(--primary-color);
+  color: var(--naranja-oscuro);
+  background-color: var(--crema);
 }
 
 .service-details .services-list a.active i {
-  color: var(--contrast-color);
+  color: var(--naranja-oscuro);
 }
 
 .service-details .services-list a:hover {
-  background-color: rgba(var(--primary-color-rgb), 0.05);
-  color: var(--primary-color);
+  background-color: rgba(var(--crema-rgb), 0.05);
+  color: var(--crema-rgb);
 }
 
 .service-details .download-catalog a {
@@ -2326,16 +2302,16 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .service-details .download-catalog a i {
   font-size: 24px;
   margin-right: 8px;
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .service-details .download-catalog a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .service-details .help-box {
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
   margin-top: 30px;
   padding: 30px 15px;
 }
@@ -2346,7 +2322,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .service-details .help-box h4,
 .service-details .help-box a {
-  color: var(--contrast-color);
+  color: var(--naranja-oscuro);
 }
 
 .service-details .services-img {
@@ -2377,7 +2353,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 .service-details ul i {
   font-size: 20px;
   margin-right: 8px;
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 /*--------------------------------------------------------------
@@ -2385,6 +2361,19 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 --------------------------------------------------------------*/
 /* Blog Section - Blog Page
 ------------------------------*/
+
+.blog img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
+  background: none; /* Elimina el fondo original */
+}
+
 .blog .posts-list article {
   box-shadow: 0 4px 16px rgba(var(--default-color-rgb), 0.1);
   padding: 30px;
@@ -2413,12 +2402,12 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog .posts-list .title a {
-  color: var(--secondary-color);
+  color: var(--crema);
   transition: 0.3s;
 }
 
 .blog .posts-list .title a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .blog .posts-list .post-author-img {
@@ -2465,13 +2454,13 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .blog .pagination li.active,
 .blog .pagination li:hover {
-  background: var(--primary-color);
-  color: var(--contrast-color);
+  background: var(--crema);
+  color: var(--naranja-oscuro);
 }
 
 .blog .pagination li.active a,
 .blog .pagination li:hover a {
-  color: var(--contrast-color);
+  color: var(--naranja-oscuro);
 }
 
 /*--------------------------------------------------------------
@@ -2490,7 +2479,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .title {
-  color: var(--secondary-color);
+  color: var(--crema);
   font-size: 28px;
   font-weight: 700;
   padding: 0;
@@ -2532,7 +2521,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: var(--primary-color);
+  background-color: var(--crema);
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -2585,7 +2574,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .meta-bottom a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .blog-details .meta-bottom .cats {
@@ -2630,7 +2619,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .sidebar .sidebar-title {
-  color: var(--secondary-color);
+  color: var(--crema);
   font-size: 20px;
   font-weight: 700;
   padding: 0;
@@ -2662,7 +2651,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .sidebar .search-form form button {
-  background: var(--primary-color);
+  background: var(--crema);
   color: var(--background-color);
   position: absolute;
   top: 0;
@@ -2682,7 +2671,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .sidebar .search-form form button:hover {
-  background: rgba(var(--primary-color-rgb), 0.8);
+  background: rgba(var(--crema-rgb), 0.8);
 }
 
 .blog-details .sidebar .categories ul {
@@ -2700,7 +2689,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .sidebar .categories ul a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .blog-details .sidebar .categories ul a span {
@@ -2731,7 +2720,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .sidebar .recent-posts h4 a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .blog-details .sidebar .recent-posts time {
@@ -2766,8 +2755,8 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .blog-details .sidebar .tags ul a:hover {
   color: var(--background-color);
-  border: 1px solid var(--primary-color);
-  background: var(--primary-color);
+  border: 1px solid var(--crema);
+  background: var(--crema);
 }
 
 .blog-details .sidebar .tags ul a span {
@@ -2843,7 +2832,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 }
 
 .blog-details .comments .comment h5 a:hover {
-  color: var(--primary-color);
+  color: var(--crema);
 }
 
 .blog-details .comments .comment h5 .reply {
@@ -2892,7 +2881,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .blog-details .comments .reply-form input:focus {
   box-shadow: none;
-  border-color: var(--primary-color);
+  border-color: var(--crema);
 }
 
 .blog-details .comments .reply-form textarea {
@@ -2907,7 +2896,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .blog-details .comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: var(--primary-color);
+  border-color: var(--crema);
 }
 
 .blog-details .comments .reply-form .form-group {
@@ -2918,11 +2907,11 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: var(--primary-color);
-  color: var(--contrast-color);
+  background-color: var(--crema);
+  color: var(--naranja-oscuro);
 }
 
 .blog-details .comments .reply-form .btn-primary:hover {
-  color: var(--contrast-color);
-  background-color: rgba(var(--primary-color-rgb), 0.8);
+  color: var(--naranja-oscuro);
+  background-color: rgba(var(--crema-rgb), 0.8);
 }
