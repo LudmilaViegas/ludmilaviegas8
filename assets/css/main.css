@@ -15,6 +15,9 @@
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Montserrat", sans-serif;
   --nav-font: "Lato", sans-serif;
+  --adobe-font: "capitolina", serif; 
+  --Angie: "ff-angie-pro", serif;
+  --Monsal: "monsal-gothic", sans-serif;
 }
 
 /* Global Colors */
@@ -73,7 +76,7 @@ h4,
 h5,
 h6 {
   color: var(--secondary-color);
-  font-family: var(--heading-font);
+  font-family: var(--Angie);
 }
 
 section {
@@ -93,7 +96,7 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 1700;
   position: relative;
 }
 
@@ -1236,12 +1239,12 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 .features .features-item .features-img-bg {
   position: relative;
-  min-height: 500px;
+  min-height: 10000px;
 }
 
 @media (max-width: 640px) {
   .features .features-item .features-img-bg {
-    min-height: 300px;
+    min-height: 1400px;
   }
 }
 
@@ -1401,7 +1404,7 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   box-shadow: 0 3px 20px -2px rgba(var(--default-color-rgb), 0.1);
   padding: 60px 40px;
   height: 100%;
-  position: relative;
+  position: center;
   border-radius: 0px;
 }
 
@@ -1412,10 +1415,11 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   text-align: center;
 }
 
-.pricing .icon img {
+.pricing .img {
   width: 70px; /* Ancho deseado para la imagen */
   height: 70px; /* Alto deseado para la imagen */
-  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: block; /* Asegurar que la imagen se comporte como bloque */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1424,35 +1428,24 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
   transform-style: preserve-3d;
 }
 
-.pricing .icon img {
-  width: 70px; /* Ancho deseado para la imagen */
-  height: 70px; /* Alto deseado para la imagen */
-  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
+.pricing .img {
+  width: 500px; /* Ancho deseado para la imagen */
+  height: 500px; /* Alto deseado para la imagen */
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: block; /* Asegurar que la imagen se comporte como bloque */
   border-radius: 50%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: space-around;
+  justify-content: space-around;
   transition: 0.3s;
   transform-style: preserve-3d;
 }
 
-.pricing .icon img {
-  width: 70px; /* Ancho deseado para la imagen */
-  height: 70px; /* Alto deseado para la imagen */
-  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-  transform-style: preserve-3d;
-}
-
-.pricing .icon img {
-  width: 70px; /* Ancho deseado para la imagen */
-  height: 70px; /* Alto deseado para la imagen */
-  margin: 30px auto 20px auto; /* Ajusta el margen según sea necesario */
-  border-radius: 50%;
+.pricing .img {
+  width: fit-content; /* Ancho deseado para la imagen */
+  height: fit-content px; /* Alto deseado para la imagen */
+  margin: 0 auto; /* Centrar horizontalmente */
+  display: block; /* Asegurar que la imagen se comporte como bloque */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1552,6 +1545,17 @@ margin: 0px 0; /* Aumenta el espacio superior e inferior según sea necesario */
 
 /* Faq Section - Home Page - parte preguntas
 ------------------------------*/
+
+/* Reemplaza 'ruta-de-la-imagen.png' con la ruta real de tu imagen */
+.faq-section {
+  background-image: url('ruta-de-la-imagen.png');
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-position: center center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen de fondo */
+  padding: 100px 0; /* Ajusta el espacio alrededor del contenido de la sección */
+  color: white; /* Ajusta el color del texto según sea necesario para que sea legible en el fondo */
+}
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
